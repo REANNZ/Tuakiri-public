@@ -66,9 +66,6 @@ fi
 # Step 1: download the file
 wget -O $LOCAL_TMP_FILE $REMOTE_URL >> $LOGFILE 2>&1
 if [ $? -ne 0 ] ; then BailOut "wget $REMOTE_URL failed"; fi
-# Touch the file to make the timestamp current - workaround an OpenSAML2 bug.
-# See TUAK-70 for more info
-touch $LOCAL_TMP_FILE
 
 # Step 2: check the file is well-formed
 xmllint -noout $LOCAL_TMP_FILE >> $LOGFILE 2>&1
@@ -97,6 +94,9 @@ else
 
    # Move the new file into the target location
    mv -f $LOCAL_TMP_FILE $LOCAL_FILE
+   # Touch the file to make the timestamp current - workaround an OpenSAML2 bug.
+   # See https://issues.shibboleth.net/jira/browse/OSJ-165 for more info
+   touch $LOCAL_FILE
 fi
 
 # all good - remove log file
