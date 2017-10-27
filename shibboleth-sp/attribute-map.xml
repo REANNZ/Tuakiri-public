@@ -204,7 +204,7 @@
     <Attribute name="urn:oid:2.5.4.16" id="postalAddress"/>
 
     <!-- external: schac -->
-    <Attribute name="urn:oid:1.3.6.1.4.1.25178.1.2.9" id="homeOrganization"/>
-    <Attribute name="urn:oid:1.3.6.1.4.1.25178.1.2.10" id="homeOrganizationType"/>
+    <Attribute name="urn:oid:1.3.6.1.4.1.25178.1.2.9" id="schacHomeOrganization"/>
+    <Attribute name="urn:oid:1.3.6.1.4.1.25178.1.2.10" id="schacHomeOrganizationType"/>
 
 </Attributes>
