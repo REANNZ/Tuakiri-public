@@ -1,0 +1,11 @@
+/var/log/shibboleth-www/*.log {
+    missingok
+    daily
+    rotate 10
+    nodateext
+    size 1000000
+    sharedscripts
+    postrotate
+        /sbin/service httpd reload > /dev/null 2>/dev/null || true
+    endscript
+}
