@@ -6,6 +6,6 @@
     size 1000000
     sharedscripts
     postrotate
-        /sbin/service apache2 reload > /dev/null 2>/dev/null || true
+        /usr/sbin/service apache2 reload > /dev/null 2>/dev/null || true
     endscript
 }
