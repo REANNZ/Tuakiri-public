@@ -6,6 +6,13 @@
 # Download XML file from remote URL into LocalFile, optionally verify with
 # SigningCertificate and report any errors by email to ErrorsTo
 #
+# Environment variables:
+#
+#   XMLSECTOOL: path to XmlSEcTool executable to use for signature validation
+#       (defaults to first instance found in path with `which xmlsectool)
+#   WGET_OPTS: optional arguments to pass to wget.  To allow passing spaces in options
+#       (for extra HTTP headers), multiple options must be separated with \t.
+#
 # External dependencies:
 #    xmllint: for checking XML well-formedness
 #    wget: for downloading the remote URL
@@ -46,6 +53,7 @@ echo "LOCAL_TMP_FILE=$LOCAL_TMP_FILE"
 echo "ERRORS_TO=$ERRORS_TO"
 echo "SIGNING_CERT=$SIGNING_CERT"
 echo "XMLSECTOOL=$XMLSECTOOL"
+echo "WGET_OPTS=$WGET_OPTS"
 } >> $LOGFILE
 
 function BailOut {
@@ -64,7 +72,8 @@ if [ -n "$SIGNING_CERT" -a -z "$XMLSECTOOL" ] ; then
 fi
 
 # Step 1: download the file
-wget -O $LOCAL_TMP_FILE $REMOTE_URL >> $LOGFILE 2>&1
+# Temporarily set IFS to jut \t for WGET_OPTS handling
+( IFS=$'\t' ; wget $WGET_OPTS -O $LOCAL_TMP_FILE $REMOTE_URL >> $LOGFILE 2>&1 )
 if [ $? -ne 0 ] ; then BailOut "wget $REMOTE_URL failed"; fi
 
 # Step 2: check the file is well-formed
