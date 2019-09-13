@@ -9,12 +9,13 @@
       <PolicyRequirementRule xsi:type="InEntityGroup"
                                  groupID="{{ federation_group_id }}" />
 
+      <!-- legacy rules as per FR-generated attribute filter - IdP 2.x specific -->
       <AttributeRule attributeID="persistentID">
-        <PermitValueRule xsi:type="ANY"/>
+          <PermitValueRule xsi:type="ANY"/>
       </AttributeRule>
 
       <AttributeRule attributeID="transientId">
-        <PermitValueRule xsi:type="ANY"/>
+          <PermitValueRule xsi:type="ANY"/>
       </AttributeRule>
 
       <!-- Core AAF Attributes -->
