@@ -6,8 +6,11 @@
 
   <AttributeFilterPolicy id="aaf.edu.au">
 
-      <PolicyRequirementRule xsi:type="InEntityGroup"
-                                 groupID="{{ federation_group_id }}" />
+      <PolicyRequirementRule xsi:type="OR">
+          <!-- change tuakiri.ac.nz to test.tuakiri.ac.nz in both rules below if deploying in TEST -->
+          <Rule xsi:type="InEntityGroup" groupID="tuakiri.ac.nz" />
+          <Rule xsi:type="InEntityGroup" groupID="tuakiri.ac.nz/edugain-verified" />
+      </PolicyRequirementRule>
 
       <!-- legacy rules as per FR-generated attribute filter - IdP 2.x specific -->
       <AttributeRule attributeID="persistentID">
