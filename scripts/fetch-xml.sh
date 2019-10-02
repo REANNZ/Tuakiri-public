@@ -25,11 +25,11 @@
 # The SigningCertificate is optional - only if it is specified, the signature
 # on the downloaded file would be verified.  And in that case, if xmlsectool
 # cannot be found, the program would fail.
-# 
+#
 # For security reasons, if not doing signature checking, it is highly important
 # to be downloading the files over https - which protects the integrity well.
 
-if [ $# -lt 2 -o $# -gt 4 ] ; then 
+if [ $# -lt 2 -o $# -gt 4 ] ; then
   echo "ERROR: Invalid number of arguments"
   echo "Usage:"
   echo "    $0 RemoteURL LocalFile ErrorsTo [SigningCert]"
@@ -45,7 +45,7 @@ SIGNING_CERT=${4:-} # leave blank if no argument passed
 
 XMLSECTOOL=${XMLSECTOOL:-`which xmlsectool 2> /dev/null`}
 
-{ echo "fetch-xml.sh starting: `date`" 
+{ echo "fetch-xml.sh starting: `date`"
 echo "Invoked as: $0 $*"
 echo "REMOTE_URL=$REMOTE_URL"
 echo "LOCAL_FILE=$LOCAL_FILE"
@@ -82,7 +82,7 @@ if [ $? -ne 0 ] ; then BailOut "xmllint $LOCAL_TMP_FILE failed"; fi
 
 # Skip schema validation - it would be too much hassle to setup schema files at
 # each client site, and schema validation is done before signing the file at
-# distribution site.  
+# distribution site.
 # So any file that passes signature check is also schema valid.
 
 if [ -n "$SIGNING_CERT" ] ; then
@@ -92,7 +92,7 @@ fi
 
 # We are all good.  One final check: if the source and destination files are the same, quietly stop
 diff $LOCAL_TMP_FILE $LOCAL_FILE > /dev/null 2>> $LOGFILE
-if [ $? -eq 0 ] ; then 
+if [ $? -eq 0 ] ; then
    # no differences
    rm $LOCAL_TMP_FILE
 else
