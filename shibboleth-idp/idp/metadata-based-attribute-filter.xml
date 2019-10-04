@@ -13,13 +13,9 @@
       </PolicyRequirementRule>
 
       <!-- legacy rules as per FR-generated attribute filter - IdP 2.x specific -->
-      <AttributeRule attributeID="persistentID">
-          <PermitValueRule xsi:type="ANY"/>
-      </AttributeRule>
+      <AttributeRule attributeID="persistentID" permitAny="true"/>
 
-      <AttributeRule attributeID="transientId">
-          <PermitValueRule xsi:type="ANY"/>
-      </AttributeRule>
+      <AttributeRule attributeID="transientId" permitAny="true"/>
 
       <!-- Core Tuakiri Attributes -->
       <AttributeRule attributeID="auEduPersonSharedToken">

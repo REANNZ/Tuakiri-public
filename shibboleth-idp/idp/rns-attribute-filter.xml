@@ -14,35 +14,21 @@
  
     <!-- a fixed subset of the Research & Scholarship Attribute Bundle -->
     <!-- release of ePPN is REQUIRED -->
-    <AttributeRule attributeID="eduPersonPrincipalName">
-      <PermitValueRule xsi:type="ANY"/>
-    </AttributeRule>
+    <AttributeRule attributeID="eduPersonPrincipalName" permitAny="true"/>
  
     <!-- if your deployment of ePPN is non-reassigned, release of ePTID is OPTIONAL -->
-    <AttributeRule attributeID="eduPersonTargetedID">
-      <PermitValueRule xsi:type="ANY"/>
-    </AttributeRule>
+    <AttributeRule attributeID="eduPersonTargetedID" permitAny="true"/>
  
     <!-- release of email is REQUIRED -->
-    <AttributeRule attributeID="email">
-      <PermitValueRule xsi:type="ANY"/>
-    </AttributeRule>
+    <AttributeRule attributeID="email" permitAny="true"/>
  
     <!-- either displayName or (givenName and sn) is REQUIRED but all three are RECOMMENDED -->
-    <AttributeRule attributeID="displayName">
-      <PermitValueRule xsi:type="ANY"/>
-    </AttributeRule>
-    <AttributeRule attributeID="givenName">
-      <PermitValueRule xsi:type="ANY"/>
-    </AttributeRule>
-    <AttributeRule attributeID="surname">
-      <PermitValueRule xsi:type="ANY"/>
-    </AttributeRule>
+    <AttributeRule attributeID="displayName" permitAny="true"/>
+    <AttributeRule attributeID="givenName" permitAny="true"/>
+    <AttributeRule attributeID="surname" permitAny="true"/>
    
     <!-- release of ePSA is OPTIONAL -->
-    <AttributeRule attributeID="eduPersonScopedAffiliation">
-      <PermitValueRule xsi:type="ANY"/>
-    </AttributeRule>
+    <AttributeRule attributeID="eduPersonScopedAffiliation" permitAny="true"/>
   </AttributeFilterPolicy>
 
 </AttributeFilterPolicyGroup>
