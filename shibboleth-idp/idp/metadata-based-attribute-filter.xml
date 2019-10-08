@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<AttributeFilterPolicyGroup id="AAF-ShibbolethFilterPolicy"
+<AttributeFilterPolicyGroup id="Tuakiri-Metadata-Bssed-FilterPolicy"
         xmlns="urn:mace:shibboleth:2.0:afp"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="urn:mace:shibboleth:2.0:afp http://shibboleth.net/schema/idp/shibboleth-afp.xsd">
 
-  <AttributeFilterPolicy id="aaf.edu.au">
+  <AttributeFilterPolicy id="tuakiri.ac.nz/metadata-based-filter-policy">
 
       <PolicyRequirementRule xsi:type="OR">
           <!-- change tuakiri.ac.nz to test.tuakiri.ac.nz in both rules below if deploying in TEST -->
