@@ -35,7 +35,10 @@
       </AttributeRule>
 
       <AttributeRule attributeID="eduPersonEntitlement">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="AND">
+              <Rule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+              <Rule xsi:type="Value" value="urn:mace:dir:entitlement:common-lib-terms"/>
+          </PermitValueRule>
       </AttributeRule>
 
       <AttributeRule attributeID="eduPersonPrincipalName">
