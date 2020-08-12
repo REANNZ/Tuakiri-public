@@ -14,62 +14,62 @@
 
       <!-- Core Tuakiri Attributes -->
       <AttributeRule attributeID="auEduPersonSharedToken">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
       </AttributeRule>
 
       <AttributeRule attributeID="displayName">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
       </AttributeRule>
 
       <AttributeRule attributeID="eduPersonAffiliation">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
       </AttributeRule>
 
       <AttributeRule attributeID="eduPersonAssurance">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
       </AttributeRule>
 
       <AttributeRule attributeID="eduPersonEntitlement">
           <PermitValueRule xsi:type="AND">
-              <Rule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+              <Rule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
               <Rule xsi:type="Value" value="urn:mace:dir:entitlement:common-lib-terms"/>
           </PermitValueRule>
       </AttributeRule>
 
       <AttributeRule attributeID="eduPersonPrincipalName">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
       </AttributeRule>
 
       <AttributeRule attributeID="eduPersonScopedAffiliation">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
       </AttributeRule>
 
       <AttributeRule attributeID="eduPersonTargetedID">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
       </AttributeRule>
 
       <AttributeRule attributeID="email">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
       </AttributeRule>
 
       <AttributeRule attributeID="givenName">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
       </AttributeRule>
 
       <AttributeRule attributeID="homeOrganization">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
       </AttributeRule>
 
       <AttributeRule attributeID="homeOrganizationType">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
       </AttributeRule>
 
       <AttributeRule attributeID="organizationName">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
       </AttributeRule>
 
       <AttributeRule attributeID="surname">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
       </AttributeRule>
 
       <!-- Optional AAF Attributes -->
@@ -77,51 +77,51 @@
       <!-- Schema: eduPerson -->
 
       <AttributeRule attributeID="eduPersonOrcid">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
       </AttributeRule>
 
       <AttributeRule attributeID="eduPersonPrimaryAffiliation">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
       </AttributeRule>
 
       <!-- Schema: auEduPerson -->
 
       <AttributeRule attributeID="auEduPersonAffiliation">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
       </AttributeRule>
 
       <AttributeRule attributeID="auEduPersonLegalName">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
       </AttributeRule>
 
       <!-- AAF Specific attributes -->
 
       <AttributeRule attributeID="dsdStudentId">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
       </AttributeRule>
 
       <!-- Schema: Core Schema Attributes -->
 
       <AttributeRule attributeID="mobileNumber">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
       </AttributeRule>
 
       <!-- Schema: X.500 Attributes -->
 
       <AttributeRule attributeID="commonName">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
       </AttributeRule>
 
       <AttributeRule attributeID="organizationalUnit">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
       </AttributeRule>
 
       <AttributeRule attributeID="postalAddress">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
       </AttributeRule>
 
       <AttributeRule attributeID="telephoneNumber">
-          <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
+          <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
       </AttributeRule>
 
     </AttributeFilterPolicy>
