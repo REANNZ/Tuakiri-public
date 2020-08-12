@@ -12,11 +12,6 @@
           <Rule xsi:type="InEntityGroup" groupID="tuakiri.ac.nz/edugain-verified" />
       </PolicyRequirementRule>
 
-      <!-- legacy rules as per FR-generated attribute filter - IdP 2.x specific -->
-      <AttributeRule attributeID="persistentID" permitAny="true"/>
-
-      <AttributeRule attributeID="transientId" permitAny="true"/>
-
       <!-- Core Tuakiri Attributes -->
       <AttributeRule attributeID="auEduPersonSharedToken">
           <PermitValueRule xsi:type="MappedAttributeInMetadata" onlyIfRequired="false"/>
