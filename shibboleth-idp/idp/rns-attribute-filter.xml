@@ -20,11 +20,15 @@
     <AttributeRule attributeID="eduPersonTargetedID" permitAny="true"/>
  
     <!-- release of email is REQUIRED -->
+    <AttributeRule attributeID="mail" permitAny="true"/>
+    <!-- legacy name matching earlier Tuakiri/AAF use -->
     <AttributeRule attributeID="email" permitAny="true"/>
  
     <!-- either displayName or (givenName and sn) is REQUIRED but all three are RECOMMENDED -->
     <AttributeRule attributeID="displayName" permitAny="true"/>
     <AttributeRule attributeID="givenName" permitAny="true"/>
+    <AttributeRule attributeID="sn" permitAny="true"/>
+    <!-- legacy name matching earlier Tuakiri/AAF use -->
     <AttributeRule attributeID="surname" permitAny="true"/>
    
     <!-- release of ePSA is OPTIONAL -->
