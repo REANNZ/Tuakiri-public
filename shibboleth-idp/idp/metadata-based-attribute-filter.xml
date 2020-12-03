@@ -48,6 +48,11 @@
           <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
       </AttributeRule>
 
+      <AttributeRule attributeID="mail">
+          <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
+      </AttributeRule>
+
+      <!-- legacy name matching earlier Tuakiri/AAF use -->
       <AttributeRule attributeID="email">
           <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
       </AttributeRule>
@@ -56,18 +61,38 @@
           <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
       </AttributeRule>
 
+      <AttributeRule attributeID="schacHomeOrganization">
+          <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
+      </AttributeRule>
+
+      <AttributeRule attributeID="schacHomeOrganizationType">
+          <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
+      </AttributeRule>
+
+      <!-- legacy name matching earlier Tuakiri/AAF use -->
       <AttributeRule attributeID="homeOrganization">
           <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
       </AttributeRule>
 
+      <!-- legacy name matching earlier Tuakiri/AAF use -->
       <AttributeRule attributeID="homeOrganizationType">
           <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
       </AttributeRule>
 
+      <AttributeRule attributeID="o">
+          <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
+      </AttributeRule>
+
+      <!-- legacy name matching earlier Tuakiri/AAF use -->
       <AttributeRule attributeID="organizationName">
           <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
       </AttributeRule>
 
+      <AttributeRule attributeID="sn">
+          <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
+      </AttributeRule>
+
+      <!-- legacy name matching earlier Tuakiri/AAF use -->
       <AttributeRule attributeID="surname">
           <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
       </AttributeRule>
@@ -108,6 +133,11 @@
 
       <!-- Schema: X.500 Attributes -->
 
+      <AttributeRule attributeID="cn">
+          <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
+      </AttributeRule>
+
+      <!-- legacy name matching earlier Tuakiri/AAF use -->
       <AttributeRule attributeID="commonName">
           <PermitValueRule xsi:type="AttributeInMetadata" onlyIfRequired="false"/>
       </AttributeRule>
