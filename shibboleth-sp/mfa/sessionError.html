@@ -19,8 +19,12 @@
 
 <p>The system encountered an error at <shibmlp now /></p>
 
-<p>To report this problem, please contact the site administrator at
-<a href="mailto:<shibmlp supportContact/>"><shibmlp supportContact/></a>.
+<strong>As Multi-Factor Authentication (MFA) was requested for this session, this error may have occurred because your Identity Provider (<shibmlp entityID/>) does not support MFA.</strong>
+
+<p>To report this problem, please contact either the site administrator at
+<a href="mailto:<shibmlp supportContact/>"><shibmlp supportContact/></a> or the operators of your Identity Provider (IT service desk of your organisation)<shibmlpif contactEmail>:
+<!-- use contactName as link text if available, falling back to contactEmail - which we know exists at this point -->
+<a href="<shibmlp contactEmail/>"><shibmlpif contactName><shibmlp contactName/></shibmlpif><shibmlpifnot contactName><shibmlp contactEmail/></shibmlpif></a></shibmlpif>.
 </p>
 
 <p>Please include the following message in any email:</p>
